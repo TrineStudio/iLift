@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding = "20px"
+  android:orientation = "vertical">
+<com.google.android.maps.MapView
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:id = "@+id/mapview"
+	android:layout_width = "fill_parent"
+	android:layout_height = "300px"
+	android:clickable = "true"
+	android:apiKey = "0l1D_qWMd4QOCelfCi0j0fRrN4oYdpNUxTyVkyw"
+/>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation = "horizontal">
+  <Button
+  	android:id = "@+id/driverSaveStartPos"
+  	android:text = "起点 "
+  	android:gravity = "center"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	/>
+  <Button
+  	android:id = "@+id/driverSaveEndPos"
+  	android:text = "终点 "
+  	android:gravity = "center"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	/>
+  <TextView
+  	android:text = "                             "
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	/>
+  <Button
+  	android:id = "@+id/driverMakeRoute"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:text = "生成 "
+  	/>
+  </LinearLayout>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop = "6px"
+  android:orientation = "horizontal">
+  <Button
+  	android:id = "@+id/passengerSaveStartPos"
+  	android:text = "保存起点 "
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	/>
+  <TextView
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:text = "                                         "
+  	/>  
+  <Button
+  	android:id = "@+id/driverMapAllRight"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:text = "√"
+  	/>
+  </LinearLayout>
+</LinearLayout>

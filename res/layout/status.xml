@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:background = "@drawable/status_back"
+  android:layout_height="fill_parent">
+  <ViewFlipper
+  	android:id = "@+id/viewFlipper"
+  	android:layout_width = "fill_parent"
+  	android:layout_height = "wrap_content"
+  	android:layout_weight = "1"
+  	android:layout_above = "@+id/selectBar"
+  	android:layout_alignParentTop = "true"
+  	android:layout_marginBottom = "5px"
+  	>
+	    <ScrollView
+     android:layout_width = "fill_parent"
+     android:layout_height = "wrap_content"
+      >
+  	<RelativeLayout
+  	  xmlns:android="http://schemas.android.com/apk/res/android"
+  	  android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight = "1">
+	  <ImageView
+	  	android:src = "@drawable/status_title"
+	  	android:layout_width = "wrap_content"
+	  	android:layout_height = "wrap_content"
+	  	android:layout_alignParentTop = "true"
+	  	android:id = "@+id/statusTitle"
+	  	/>
+      <ImageView
+      	android:id = "@+id/statusImageClicked"
+      	android:src = "@drawable/status_state1"
+      	android:layout_width = "wrap_content"
+      	android:layout_height = "wrap_content"
+      	android:layout_below = "@+id/statusTitle"
+      	android:layout_marginLeft = "80px"
+      	/>
+      <ImageView
+      	android:id = "@+id/inviteImage"
+      	android:src = "@drawable/status_title_invite2"
+      	android:layout_width = "wrap_content"
+      	android:layout_height = "wrap_content"  
+      	android:layout_toRightOf = "@+id/statusImageClicked"
+      	android:layout_alignTop = "@+id/statusImageClicked" 	
+      	/> 	
+		<RelativeLayout
+	  	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  	  android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_below = "@+id/inviteImage"
+	      android:id = "@+id/state"> 
+	       
+	      </RelativeLayout>      	
+  	</RelativeLayout>
+    </ScrollView>  
+	<RelativeLayout
+  	  xmlns:android="http://schemas.android.com/apk/res/android"
+  	  android:layout_width="fill_parent"
+  	  android:background = "@drawable/invite_background"
+  	  android:id = "@+id/status"
+      android:layout_height="wrap_content">
+	  <ImageView
+	  	android:src = "@drawable/invite_title"
+	  	android:layout_width = "wrap_content"
+	  	android:layout_height = "wrap_content"
+	  	android:layout_alignParentTop = "true"
+	  	/>      
+      <ImageView
+      	android:id = "@+id/statusImage"
+      	android:src = "@drawable/status_state2"
+      	android:layout_width = "wrap_content"
+      	android:layout_height = "wrap_content"
+      	android:layout_below = "@+id/invite_title"
+      	android:layout_marginLeft = "80px"
+      	android:layout_marginTop = "35px"
+      	/>
+      <ImageView
+      	android:id = "@+id/inviteImageClicked"
+      	android:src = "@drawable/status_title_invite1"
+      	android:layout_width = "wrap_content"
+      	android:layout_height = "wrap_content"  
+      	android:layout_toRightOf = "@+id/statusImage"
+      	android:layout_alignTop = "@+id/statusImage" 	
+      	/>
+	  	<ScrollView
+	     android:layout_width = "wrap_content"
+	     android:layout_height = "160px"
+	     android:layout_below = "@+id/inviteImageClicked"
+	     android:layout_marginLeft = "13px"
+	     android:layout_marginTop = "35px"
+	     android:id = "@+id/scroll1"
+	     >          	
+		<RelativeLayout
+	  	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  	  android:layout_width="295px"
+	      android:layout_height="160px"
+	      android:id = "@+id/inviteReceived"> 
+	      </RelativeLayout>
+	      </ScrollView>
+	  	<ScrollView
+	     android:layout_width = "wrap_content"
+	     android:layout_height = "60px"
+	     android:layout_below = "@+id/scroll1"
+	     android:layout_marginLeft = "13px"
+	     android:layout_marginTop = "55px"
+	     >          	
+		<RelativeLayout
+	  	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  	  android:layout_width="295px"
+	      android:layout_height="60px"
+	      android:id = "@+id/inviteSent"> 
+	      </RelativeLayout>
+	      </ScrollView>	      
+  	</RelativeLayout>  	
+  	</ViewFlipper>
+  <Button
+  	android:id = "@+id/selectBar"
+  	android:layout_height = "wrap_content"
+  	android:layout_width = "wrap_content"
+  	android:background = "@drawable/bar"
+  	android:layout_marginLeft = "165px"
+  	android:layout_alignParentBottom = "true"
+  	android:layout_marginBottom = "10px"
+  	/>
+  <ImageView
+  	android:id = "@+id/selectBackground"
+  	android:src = "@drawable/main_scroll_bar"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+	android:layout_alignTop = "@+id/selectBar"
+  	android:scaleType = "fitXY"
+  	/>
+</RelativeLayout>

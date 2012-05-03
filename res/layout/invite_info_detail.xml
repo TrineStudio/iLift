@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:background = "@drawable/cover_layer"
+  android:layout_height="wrap_content">
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:background = "@drawable/invite_detail_back"
+  android:layout_height="wrap_content"
+  android:id = "@+id/mainView"
+  android:layout_centerVertical = "true">
+ <Button
+	android:id = "@+id/close"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:background = "@drawable/item_info_click_button"
+	android:layout_alignParentRight = "true"
+	android:layout_alignParentTop = "true"
+	android:layout_marginTop = "10px"
+	android:layout_marginRight = "5px"
+	/>
+ <ImageView
+  	android:id = "@+id/portrait"
+  	android:layout_width = "67px"
+  	android:layout_height = "72px"
+  	android:src = "@drawable/portrait"
+  	android:layout_marginTop = "15px"
+  	android:layout_marginLeft = "5px"
+  	android:scaleType = "fitXY"
+  	/>
+<TextView
+	android:id = "@+id/job"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "教师 " 
+	android:textColor = "@color/WHITE"
+	android:layout_toRightOf = "@+id/portrait"
+	android:textSize = "14px"
+	android:layout_alignTop = "@+id/portrait"
+	android:layout_marginLeft = "24px"
+	/>
+<TextView
+	android:id = "@+id/privateCarInfo"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "无车 "
+	android:textColor = "@color/WHITE"
+	android:layout_toRightOf = "@+id/job"
+	android:layout_alignTop = "@+id/job"
+	android:textSize = "14px"
+	/>
+<TextView
+	android:id = "@+id/college"
+	android:layout_width = "100px"
+	android:layout_height = "wrap_content"
+	android:textColor = "@color/WHITE"
+	android:layout_below = "@+id/job"
+	android:layout_toRightOf = "@+id/portrait"
+	android:layout_marginTop = "10px"
+	android:layout_marginLeft = "65px"
+	/>			
+<TextView
+	android:id = "@+id/travelInfo"
+	android:layout_width = "200px"
+	android:layout_height = "wrap_content"
+	android:text = "自同济大学本部到嘉定校区 "
+	android:textColor = "@color/WHITE"
+	android:layout_centerVertical = "true"
+	android:singleLine = "true"
+	android:ellipsize = "marquee"
+	android:scrollHorizontally= "true"
+	android:marqueeRepeatLimit= "marquee_forever"	
+	android:focusable = "true"
+	android:lines = "1"
+	android:layout_below = "@+id/job"
+	android:layout_alignLeft = "@+id/job"
+	android:layout_marginTop = "40px"
+	/>	
+<TextView
+	android:id = "@+id/userName"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "廖化 "
+	android:textColor = "@color/WHITE"
+	android:layout_below = "@+id/portrait"
+	android:layout_marginLeft = "25px"
+	android:layout_marginTop = "10px"
+	/>	
+<TextView
+	android:id = "@+id/departTime"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "12月1号 "
+	android:textColor = "@color/WHITE"
+	android:layout_toRightOf = "@+id/userName"
+	android:layout_alignTop = "@+id/userName"
+	android:layout_alignLeft = "@+id/travelInfo"
+	/>
+<Button
+	android:id = "@+id/accept"
+	android:background = "@drawable/invite_accept_button"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/job"
+	android:layout_alignLeft = "@+id/job"
+	android:layout_marginTop = "90px"
+	/>	
+<Button
+	android:id = "@+id/refuse"
+	android:background = "@drawable/invite_refuse_button"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_toRightOf = "@+id/accept"
+	android:layout_below = "@+id/job"
+	android:layout_marginTop = "90px"
+	android:layout_marginLeft = "20px"
+	/>	
+<Button
+  	android:id = "@+id/invite"
+  	android:background = "@drawable/status_invite_button"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_toRightOf = "@+id/accept"
+	android:layout_below = "@+id/job"
+	android:layout_marginTop = "90px"
+	android:layout_centerHorizontal = "true"
+	android:visibility = "gone"
+	/>			
+</RelativeLayout>
+</RelativeLayout>

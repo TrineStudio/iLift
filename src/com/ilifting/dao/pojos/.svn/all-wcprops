@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ilifting/!svn/ver/8/ilifting/src/com/ilifting/dao/pojos
+END
+TLogisticsInviteInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ilifting/!svn/ver/19/ilifting/src/com/ilifting/dao/pojos/TLogisticsInviteInfo.java
+END
+TLogisticsInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ilifting/!svn/ver/19/ilifting/src/com/ilifting/dao/pojos/TLogisticsInfo.java
+END
+TUserEvaluatePassenger.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TUserEvaluatePassenger.java
+END
+TUserEvaluateOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TUserEvaluateOwner.java
+END
+TPassengerTravelInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TPassengerTravelInfo.java
+END
+TOwnerTravelInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TOwnerTravelInfo.java
+END
+TUserPathinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TUserPathinfo.java
+END
+TGoodsInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ilifting/!svn/ver/19/ilifting/src/com/ilifting/dao/pojos/TGoodsInfo.java
+END
+TUserinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TUserinfo.java
+END
+TInviteInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ilifting/!svn/ver/17/ilifting/src/com/ilifting/dao/pojos/TInviteInfo.java
+END

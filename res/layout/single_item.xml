@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:background = "@drawable/drawer_item"
+  android:layout_toRightOf = "@+id/delete"
+  android:layout_height="wrap_content">
+<ImageView
+  android:id = "@+id/itemPortrait"  
+  android:layout_width = "63px"
+  android:layout_height = "wrap_content"
+  android:layout_marginRight = "5px"
+  android:src = "@drawable/drawer_new_item"
+  android:layout_centerVertical = "true"
+  />
+  </RelativeLayout>
+</RelativeLayout>

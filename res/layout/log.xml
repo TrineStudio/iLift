@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background = "@drawable/login">
+	<RelativeLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id = "@+id/whiteBoard"
+	  android:layout_width="305px"
+	  android:layout_marginLeft = "7px"
+	  android:layout_marginTop = "100px"
+	  android:layout_height="wrap_content"
+	  android:background = "@drawable/whiteboard">
+	<EditText
+		android:id = "@+id/userName"
+		android:layout_marginTop = "50px"
+		android:drawableLeft = "@drawable/username"
+		android:layout_width = "280px"
+		android:background = "@null"
+		android:singleLine = "true"
+		android:text = "请输入用户名 "
+		android:layout_marginLeft = "25px"
+		android:textColor = "@color/GRAY"
+		android:textAppearance="?android:attr/textAppearanceSmall" 
+		android:layout_height = "wrap_content"	
+		/>
+	<EditText
+		android:id = "@+id/password"
+		android:drawableLeft = "@drawable/password"
+		android:layout_width = "280px"
+		android:layout_marginTop = "18px"
+		android:layout_below = "@+id/userName"
+		android:singleLine = "true"
+		android:background = "@null"
+		android:textAppearance="?android:attr/textAppearanceSmall" 
+		android:text = "请输入密码 "
+		android:textColor = "@color/GRAY"
+		android:layout_marginLeft = "25px"
+		android:layout_height = "wrap_content"	
+		android:inputType = "textPassword"
+		/>
+	<CheckBox
+		android:id = "@+id/rememberMe"
+		android:layout_width = "wrap_content"
+		android:layout_height = "35px"
+		android:text = "记住我 "
+		android:button = "@drawable/checkbox_style"
+		android:layout_marginLeft = "20px"
+		android:textAppearance="?android:attr/textAppearanceSmall" 
+		android:textColor = "@color/BLACK"
+		android:layout_below = "@+id/password"
+		android:layout_marginTop = "5px"
+		/>
+	<CheckBox
+		android:id = "@+id/autoLogIn"
+		android:layout_width = "wrap_content"
+		android:layout_height = "35px"
+		android:text = "自动登入 "
+		android:button = "@drawable/checkbox_style"
+		android:textAppearance="?android:attr/textAppearanceSmall" 
+		android:textColor = "@color/BLACK"
+		android:layout_below = "@+id/password"
+		android:layout_alignParentRight = "true"
+		android:layout_marginRight = "40px"
+		android:layout_marginTop = "5px"
+		/>
+	<Button
+		android:id = "@+id/logIn"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:background = "@drawable/lets_go_style"
+		android:layout_below = "@+id/autoLogIn"
+		android:layout_alignParentRight = "true"
+		android:layout_marginRight = "5px"
+		/>
+	<Button
+		android:id = "@+id/register"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:background = "@drawable/register_style"
+		android:layout_below = "@+id/autoLogIn"
+		android:layout_toLeftOf = "@+id/logIn"
+		android:layout_marginRight = "5px"
+		/>
+	<Button
+		android:background = "@drawable/forget_password"
+		android:layout_width = "50px"
+		android:layout_height = "14px"
+		android:layout_below = "@+id/rememberMe"
+		android:layout_marginLeft = "15px"
+		android:layout_marginTop = "5px"
+		/>
+	</RelativeLayout>
+</RelativeLayout>

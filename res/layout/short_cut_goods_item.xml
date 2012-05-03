@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:background = "@drawable/short_cut_item_back"
+  android:layout_height="wrap_content">
+<TextView
+  android:id = "@+id/message"
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:text = "即将以物流的身份为您展开搜索  "
+  android:layout_centerHorizontal = "true"
+  android:layout_marginTop = "10px"
+  android:textSize = "16px"
+  android:layout_marginLeft = "2px"
+  />  
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:id = "@+id/amount"
+  android:singleLine = "true"
+  android:layout_marginTop = "54px"
+  android:text = "1"
+  android:layout_marginLeft = "95px"
+  />
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:id = "@+id/name"
+  android:singleLine = "true"
+  android:layout_below = "@+id/amount"
+  android:text = "物品名 "
+  android:layout_alignLeft = "@+id/amount"
+  android:layout_marginTop = "20px"
+  />   
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:id = "@+id/price"
+  android:singleLine = "true"
+  android:layout_below = "@+id/name"
+  android:text = "价格 "
+  android:layout_alignLeft = "@+id/name"
+  android:layout_marginTop = "20px"
+  />    
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:id = "@+id/startPos"
+  android:singleLine = "true"
+  android:layout_below = "@+id/price"
+  android:text = "起点 "
+  android:layout_alignLeft = "@+id/price"
+  android:layout_marginTop = "16px"
+  />      
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:id = "@+id/endPos"
+  android:singleLine = "true"
+  android:layout_below = "@+id/startPos"
+  android:text = "终点 "
+  android:layout_alignLeft = "@+id/startPos"
+  android:layout_marginTop = "14px"
+  />        
+<EditText
+   android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:id = "@+id/departTime"
+  android:singleLine = "true"
+  android:layout_below = "@+id/endPos"
+  android:text = "15"
+  android:layout_alignLeft = "@+id/endPos"
+  android:layout_marginTop = "10px"
+  android:inputType = "number"
+  android:background = "@null"
+  android:textColor = "@color/WHITE"
+  android:layout_marginLeft = "10px"
+  android:textSize = "18px"
+  />   
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:singleLine = "true"
+  android:layout_alignTop = "@+id/departTime"
+  android:text = "分钟以后 "
+  android:layout_toRightOf = "@+id/departTime"
+  android:layout_marginLeft = "5px"
+  android:textSize = "18px"
+  android:layout_marginTop = "1px"
+  />   
+<Button
+	android:id = "@+id/go"
+	android:background = "@drawable/short_cut_go_button"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/departTime"
+	android:layout_marginLeft = "40px"
+	android:layout_marginTop = "13px"
+	/>	
+<Button
+	android:id = "@+id/cancel"
+	android:background = "@drawable/short_cut_cancel_button"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/departTime"
+	android:layout_toRightOf = "@+id/go"
+	android:layout_marginLeft = "40px"
+	android:layout_marginTop = "13px"
+	/>	  
+</RelativeLayout>

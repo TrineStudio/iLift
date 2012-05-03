@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:background = "@drawable/change_info_back"
+  android:layout_height="fill_parent">
+<EditText
+	android:id = "@+id/oldPassword"
+	android:drawableLeft = "@drawable/password_white"
+	android:layout_marginTop = "72px"
+	android:layout_width = "270px"
+	android:layout_height = "wrap_content"
+	android:background = "@null"
+	android:layout_marginLeft = "25px"
+	android:inputType = "textPassword"
+	android:textColor = "@color/WHITE"
+	/>
+<EditText
+	android:id = "@+id/newPassword"
+	android:drawableLeft = "@drawable/change_info_new_password"
+	android:layout_height = "wrap_content"
+	android:layout_width = "250px"
+	android:background = "@null"
+	android:singleLine = "true"
+	android:layout_marginLeft = "45px"
+	android:layout_marginTop = "25px"
+	android:layout_below = "@+id/oldPassword"
+	android:inputType = "textPassword"
+	android:textColor = "@color/WHITE"
+	/>
+<EditText
+	android:id = "@+id/newPasswordAck"
+	android:layout_width = "280px"
+	android:layout_height = "wrap_content"
+	android:drawableLeft = "@drawable/change_info_new_password_again"
+	android:background = "@null"
+	android:layout_below = "@+id/newPassword"
+	android:layout_marginTop = "32px"
+	android:layout_marginLeft = "20px"
+	android:inputType = "textPassword"
+	android:textColor = "@color/WHITE"
+	/>
+<EditText
+	android:id = "@+id/newMail"
+	android:layout_height = "wrap_content"
+	android:layout_width = "275px"
+	android:drawableLeft = "@drawable/email"
+	android:layout_below = "@+id/newPasswordAck"
+	android:background = "@null"
+	android:layout_marginTop = "31px"
+	android:layout_marginLeft = "22px"
+	android:textColor = "@color/WHITE"
+	/>
+  <CheckBox
+  	android:id = "@+id/noPrivateCar"
+  	android:button = "@drawable/no_private_car"
+  	android:layout_width = "92px"
+  	android:layout_height = "wrap_content"
+  	android:background = "@null"
+  	android:layout_marginRight = "20px"
+  	android:layout_alignParentRight = "true"
+  	android:layout_below = "@+id/newMail"
+  	android:layout_marginTop = "20px"
+  	android:textColor = "@color/WHITE"
+  	/>   	
+  <EditText
+  	android:id = "@+id/userPrivateCar"
+  	android:layout_width = "160px"
+  	android:layout_height = "wrap_content"
+  	android:background = "@null"
+  	android:singleLine = "true"
+  	android:textColor = "@color/WHITE"
+  	android:enabled = "false"
+  	android:layout_below = "@+id/noPrivateCar"
+  	android:layout_marginTop = "24px"
+  	android:layout_marginLeft = "140px"
+  	/>  
+<Button
+	android:id = "@+id/save"
+	android:background = "@drawable/save_button"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/userPrivateCar"
+	android:layout_alignRight = "@+id/userPrivateCar"
+	android:layout_marginTop = "30px"
+	/>  	
+</RelativeLayout>
