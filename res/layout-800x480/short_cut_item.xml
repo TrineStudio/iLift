@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background = "@drawable/short_cut_back">
+<TextView
+  android:id = "@+id/message"
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:text = "即将以车主的身份为您展开搜索  "
+  android:layout_centerHorizontal = "true"
+  android:layout_marginTop = "10px"
+  android:textSize = "24px"
+  android:textColor="@color/WHITE"
+  android:textStyle="bold"
+  android:layout_marginLeft = "2px"
+  />  
+<TextView
+  android:id = "@+id/startPos"
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:text = "100"
+  android:layout_below = "@+id/message"
+  android:layout_marginTop = "60px"
+  android:layout_marginLeft = "110px"
+  android:textSize = "24px"
+  android:textColor="@color/WHITE"
+  android:textStyle="bold"
+  android:singleLine = "true"
+  />
+<TextView
+  android:id = "@+id/endPos"
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:text = "100"
+  android:layout_below = "@+id/startPos"
+  android:layout_marginTop = "45px"
+  android:layout_alignLeft="@+id/startPos"
+  android:textSize = "24px"
+  android:textColor="@color/WHITE"
+  android:textStyle="bold"
+  android:singleLine = "true"
+  />
+<TextView
+  android:id = "@+id/amount"
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:text = "100"
+  android:layout_below = "@+id/endPos"
+  android:layout_marginTop = "40px"
+  android:layout_alignLeft="@+id/startPos"
+  android:textSize = "24px"
+  android:textColor="@color/WHITE"
+  android:textStyle="bold"
+  android:singleLine = "true"
+  />  
+<EditText
+  android:id = "@+id/departTime"
+  android:layout_width = "50px"
+  android:layout_height = "wrap_content"
+  android:text = "100"
+  android:layout_below = "@+id/amount"
+  android:layout_marginTop = "40px"
+  android:layout_marginLeft = "140px"
+  android:textSize = "24px"
+  android:textColor="@color/WHITE"
+  android:textStyle="bold"
+  android:singleLine = "true"
+  android:background = "@null"
+  android:inputType = "number"
+  />    
+<TextView
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:textSize = "24px"
+  android:layout_toRightOf = "@+id/departTime"
+  android:text = "分钟以后 "
+  android:layout_alignTop = "@+id/departTime"
+  android:layout_marginLeft = "5px"
+  android:textColor="@color/WHITE"
+  />
+    <Button
+            android:id = "@+id/go"
+            android:background = "@drawable/short_cut_go_button"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@+id/departTime"
+            android:layout_marginLeft = "40px"
+            android:layout_marginTop = "30px"
+            />
+    <Button
+            android:id = "@+id/cancel"
+            android:background = "@drawable/short_cut_cancel_button"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@+id/departTime"
+            android:layout_toRightOf = "@+id/go"
+            android:layout_marginLeft = "40px"
+            android:layout_alignTop="@+id/go"
+            />
+</RelativeLayout>  
+

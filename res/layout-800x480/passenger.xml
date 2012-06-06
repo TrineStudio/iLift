@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:background = "@drawable/trip"
+  android:layout_height="fill_parent">
+
+<Spinner
+	android:id = "@+id/startPos"
+	android:layout_width = "322px"
+	android:layout_height = "49px"
+	android:layout_marginTop = "135px"
+	android:layout_marginLeft = "140px"
+	android:background = "@drawable/trip_arrow"
+	/>
+ <Spinner
+	android:id = "@+id/endPos"
+	android:layout_width = "322px"
+	android:layout_height = "49px"
+	android:layout_below = "@+id/startPos"
+	android:layout_alignLeft = "@+id/startPos"
+    android:layout_marginTop="20px"
+	android:background = "@drawable/trip_arrow"
+	/>
+  <EditText
+  	android:id = "@+id/passengerAmount"
+  	android:layout_width = "220px"
+  	android:layout_height = "38px"
+	android:layout_below = "@+id/endPos"
+	android:layout_alignLeft = "@+id/endPos"
+    android:layout_marginTop="25px"
+	android:background = "@null"
+	android:singleLine = "true"
+	android:inputType = "number"
+    android:textColor="@color/WHITE"
+	/>
+  <TextView
+  	android:id = "@+id/setDate"
+  	android:layout_width = "195px"
+  	android:layout_height = "37px"
+  	android:layout_below = "@+id/passengerAmount" 
+  	android:layout_marginLeft = "142px"
+  	android:layout_marginTop = "103px"
+	/>
+  <TextView
+  	android:id = "@+id/setTime"
+  	android:layout_width = "114px"
+  	android:layout_height = "40px"
+  	android:layout_below = "@+id/setDate"
+  	android:layout_marginTop = "42px"
+  	android:layout_alignLeft = "@+id/setDate"
+	/>
+  <EditText
+  	android:id = "@+id/flowTime"
+  	android:layout_width = "52px"
+  	android:layout_height = "30px"
+  	android:layout_below = "@+id/setTime"
+  	android:layout_marginTop = "45px"
+  	android:background = "@null"
+  	android:layout_alignLeft = "@+id/setDate"
+  	android:textColor = "@color/WHITE"
+  	android:inputType = "number"
+	/>
+   <Spinner
+   	android:id = "@+id/accurate"
+   	android:layout_width = "wrap_content"
+   	android:layout_height = "wrap_content"
+   	android:background = "@drawable/trip_accurate"
+   	android:layout_below = "@+id/setDate"
+   	android:layout_toRightOf = "@+id/flowTime"
+    android:layout_marginTop = "38px"
+    android:layout_marginLeft="180px"
+   	android:entries = "@array/accurate_table"
+   	/>
+   <Button
+   	android:id = "@+id/go"
+   	android:background = "@drawable/trip_go"
+   	android:layout_width = "wrap_content"
+   	android:layout_height = "wrap_content"
+    android:layout_alignRight="@+id/accurate"
+   	android:layout_below = "@+id/flowTime"
+   	android:layout_marginTop = "40px"
+   	/>
+   <Button
+   	android:id = "@+id/saveShortCut"
+   	android:layout_alignTop = "@+id/go"
+   	android:layout_width = "wrap_content"
+   	android:layout_height = "wrap_content"
+   	android:background = "@drawable/save_as_shortcur_button"
+   	android:layout_marginLeft = "30px"
+   	android:layout_marginTop = "2px"
+   	/>
+    <ImageView
+            android:id = "@+id/selectBackground"
+            android:src = "@drawable/main_scroll_bar"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:scaleType = "fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+    <Button
+            android:id = "@+id/selectBar"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:background = "@drawable/bar"
+            android:layout_alignTop="@+id/selectBackground"
+            android:layout_marginTop="4px"
+            android:layout_alignLeft="@+id/selectBackground"
+            android:layout_marginLeft="130px"
+            />
+
+</RelativeLayout>

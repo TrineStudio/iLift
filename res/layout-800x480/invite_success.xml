@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:background = "@drawable/cover_layer"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background = "@drawable/invite_detail_back"
+        android:layout_centerInParent="true"
+        >
+    <ImageView
+        android:id="@+id/portrait"
+        android:src="@drawable/portrait"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="25px"
+        />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:text="xxx用户已经接受您的搭车邀请，您可以点击按钮和对方联系~"
+        android:textColor="@color/WHITE"
+        android:layout_toRightOf="@+id/portrait"
+        android:textStyle="bold"
+        android:id="@+id/text"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:background="@drawable/item_info_click_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12px"
+        android:layout_marginRight="5px"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:background="@drawable/phone_button"
+        android:layout_marginLeft="130px"
+        android:layout_toRightOf="@+id/portrait"
+        android:id="@+id/phoneButton"
+        />
+
+
+    </RelativeLayout>
+</RelativeLayout>

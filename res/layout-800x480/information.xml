@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background = "@drawable/function_select_page"
+  >
+ <ImageView
+ 	android:id = "@+id/portrait"
+ 	android:layout_width = "161px"
+ 	android:layout_height = "161px"
+ 	android:src = "@drawable/portrait"
+ 	android:layout_marginTop = "100px"
+ 	android:layout_marginLeft = "13px"
+    android:scaleType="fitXY"
+ 	/>
+ <Button
+ 	android:id = "@+id/newPhoto"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"
+ 	android:background = "@drawable/new_photo"
+ 	android:layout_alignLeft = "@+id/portrait"
+ 	android:layout_below = "@+id/portrait"
+ 	android:layout_marginTop = "20px"
+ 	/>
+  <Button
+ 	android:id = "@+id/selectPhoto"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"
+ 	android:background = "@drawable/load_photo"
+ 	android:layout_alignLeft = "@+id/portrait"
+ 	android:layout_below = "@+id/newPhoto"
+ 	android:layout_marginTop = "10px"
+ 	/>
+  <TextView
+  	android:id = "@+id/name"
+  	android:layout_width = "fill_parent"
+  	android:layout_height = "wrap_content"
+  	android:layout_marginLeft = "20px"
+  	android:drawableLeft = "@drawable/username_white"
+      android:layout_marginTop = "102px"
+  	android:layout_toRightOf = "@+id/portrait"
+  	/>
+   <TextView
+  	android:id = "@+id/carType"
+  	android:layout_width = "fill_parent"
+  	android:layout_height = "wrap_content"
+  	android:drawableLeft = "@drawable/private_car"
+  	android:layout_alignLeft = "@+id/name"
+	android:layout_below = "@+id/name"
+	android:layout_marginTop = "30px"
+  	/>
+  <ImageView
+  	android:id = "@+id/occupation"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:src = "@drawable/student"
+  	android:layout_alignLeft = "@+id/name"
+  	android:layout_below = "@+id/carType"
+  	android:layout_marginTop = "35px"
+  	/>
+   <TextView
+  	android:id = "@+id/college"
+  	android:layout_width = "fill_parent"
+  	android:layout_height = "wrap_content"
+  	android:drawableLeft = "@drawable/college"
+  	android:layout_alignLeft = "@+id/occupation"
+	android:layout_below = "@+id/occupation"
+	android:layout_marginTop = "30px"
+  	/>
+
+    <ImageView
+        android:id = "@+id/barBackground"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        android:layout_below = "@+id/college"
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop = "160px"
+        android:src = "@drawable/mainpage"
+        />
+    <Button
+        android:id = "@+id/bar"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        android:background = "@drawable/select_bar"
+        android:layout_centerHorizontal = "true"
+        android:layout_alignTop = "@+id/barBackground"
+        android:layout_marginTop="2px"
+    	/>
+    <ImageView
+        android:id = "@+id/selectBackground"
+        android:src = "@drawable/main_scroll_bar"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:scaleType = "fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+     <Button
+        android:id = "@+id/selectBar"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        android:background = "@drawable/bar"
+        android:layout_alignTop="@+id/selectBackground"
+        android:layout_marginTop="4px"
+        android:layout_alignLeft="@+id/selectBackground"
+        android:layout_marginLeft="15px"
+        />
+  	 </RelativeLayout>

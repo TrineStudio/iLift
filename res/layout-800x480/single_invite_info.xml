@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background = "@drawable/invite_item_back">
+<ImageView
+	android:layout_marginLeft = "10px"
+	android:id = "@+id/statusImage"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:src = "@drawable/driver_icon"
+	/> 
+<TextView
+	android:id = "@+id/userName"
+	android:layout_toRightOf = "@+id/statusImage"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:textColor = "@color/BLUE"
+	android:text = "用户名 "
+	android:layout_centerVertical = "true"
+	android:layout_marginLeft = "10px"
+	/>  
+
+<TextView
+	android:id = "@+id/travelInfo"
+	android:layout_width = "230px"
+	android:layout_height = "wrap_content"
+	android:text = "自同济大学本部到嘉定校区 "
+	android:textColor = "@color/WHITE"
+	android:layout_toRightOf = "@+id/userName"
+	android:layout_centerVertical = "true"
+	android:layout_marginLeft = "5px"
+	android:singleLine = "true"
+	android:ellipsize = "marquee"
+	android:scrollHorizontally= "true"
+	android:marqueeRepeatLimit= "marquee_forever"	
+	android:focusable = "true"
+	android:lines = "1"
+	/>	
+<TextView
+	android:id = "@+id/departTime"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "出发时间 "
+	android:textColor = "@color/WHITE"
+	android:layout_centerVertical = "true"
+	android:layout_toRightOf = "@+id/travelInfo"
+	android:layout_marginLeft = "5px"
+	/>	
+</RelativeLayout>
+

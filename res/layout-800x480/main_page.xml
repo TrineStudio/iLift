@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id = "@+id/relativeLayout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background = "@drawable/main"
+  >
+ <ImageView
+ 	android:id = "@+id/lift"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"
+ 	android:src = "@drawable/point"
+ 	android:layout_alignParentBottom = "true"
+ 	android:layout_marginBottom = "314px"
+ 	android:layout_marginLeft = "24px"
+ 	/>
+ <ImageView
+ 	android:id = "@+id/goods"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"
+ 	android:src = "@drawable/point"
+     android:layout_marginBottom = "316px"
+	android:layout_toRightOf = "@+id/lift"
+	android:layout_marginLeft = "150px"
+    android:layout_alignParentBottom = "true"
+ 	/>
+ <ImageView
+ 	android:id = "@+id/shortCut"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"
+ 	android:src = "@drawable/point"
+	android:layout_toRightOf = "@+id/lift"
+	android:layout_marginLeft = "350px"
+	android:layout_marginBottom = "500px"
+	android:layout_alignParentBottom = "true"
+
+ 	/> 	
+ <ImageView
+ 	android:id = "@+id/around"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"
+ 	android:src = "@drawable/point"
+	android:layout_above = "@+id/shortCut"
+	android:layout_alignLeft = "@+id/shortCut"
+	android:layout_marginBottom = "130px"
+
+ 	/> 	 	
+</RelativeLayout>

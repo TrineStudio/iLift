@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:background = "@drawable/drawer_real_back"
+  android:layout_height="fill_parent"
+  android:id = "@+id/drawerParent"
+  >
+ <Button
+  android:id = "@+id/pack"
+  android:layout_width = "wrap_content"
+  android:layout_height = "wrap_content"
+  android:layout_alignParentRight = "true"
+  android:layout_marginTop="10px"
+  android:layout_marginRight="5px"
+  android:background = "@drawable/drawer_pack_button"
+  />  
+<ViewFlipper
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/parent"
+	android:id = "@+id/drawer"
+	android:layout_centerInParent="true"
+	android:layout_marginTop = "50px"
+	>
+</ViewFlipper>
+
+</RelativeLayout>

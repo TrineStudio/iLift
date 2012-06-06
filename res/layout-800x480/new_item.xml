@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:background = "@drawable/new_item_background"
+  android:layout_height="fill_parent">
+<ImageView
+	android:id = "@+id/portrait"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:src = "@drawable/new_item_portrait"
+	android:layout_marginTop = "110px"
+	android:layout_marginLeft = "20px"
+	/>
+<Button
+	android:id = "@+id/newPhoto"
+	android:background = "@drawable/new_photo"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/portrait"
+	android:layout_alignLeft = "@+id/portrait"
+	android:layout_marginTop = "10px"
+	/>
+<Button
+	android:id = "@+id/selectPhoto"
+	android:background = "@drawable/load_photo"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/newPhoto"
+	android:layout_alignLeft = "@+id/newPhoto"
+	android:layout_marginTop = "10px"
+	/>
+<EditText
+	android:id = "@+id/itemName"
+	android:layout_height = "wrap_content"
+	android:background = "@null"
+	android:drawableLeft = "@drawable/new_item_name"
+	android:layout_width = "260px"
+	android:layout_toRightOf = "@+id/portrait"
+	android:layout_marginLeft = "30px"
+	android:layout_alignTop = "@+id/portrait"
+	android:layout_marginTop = "15px"
+	android:singleLine = "true"
+    android:textColor="@color/WHITE"
+	/>			
+<EditText
+	android:id = "@+id/itemAmount"
+	android:layout_height = "wrap_content"
+	android:background = "@null"
+	android:drawableLeft = "@drawable/new_item_amount"
+	android:layout_width = "260px"
+	android:layout_alignLeft = "@+id/itemName"
+	android:layout_below = "@+id/itemName"
+	android:singleLine = "true"
+	android:layout_marginTop = "20px"
+	android:inputType = "number"
+    android:textColor="@color/WHITE"
+	/>		
+<EditText
+	android:id = "@+id/itemPrice"
+	android:layout_height = "wrap_content"
+	android:background = "@null"
+	android:drawableLeft = "@drawable/new_item_price"
+	android:layout_width = "260px"
+	android:layout_alignLeft = "@+id/itemAmount"
+	android:layout_below = "@+id/itemAmount"
+	android:singleLine = "true"
+	android:inputType = "number"
+	android:layout_marginTop = "25px"
+    android:textColor="@color/WHITE"
+	/>		
+<CheckBox
+	android:id = "@+id/hot"
+	android:layout_width = "75px"
+	android:layout_height = "wrap_content"
+	android:button = "@drawable/new_item_hot_style"
+	android:layout_below = "@+id/selectPhoto"
+	android:layout_marginLeft = "150px"
+	android:layout_marginTop = "45px"
+/>	
+<CheckBox
+	android:id = "@+id/fragile"
+	android:layout_width = "75px"
+	android:layout_height = "wrap_content"
+	android:button = "@drawable/new_item_fragile_style"
+	android:layout_below = "@+id/selectPhoto"
+	android:layout_toRightOf = "@+id/hot"
+	android:layout_marginLeft = "20px"
+	android:layout_alignTop = "@+id/hot"
+/>	
+<CheckBox
+	android:id = "@+id/folderable"
+	android:layout_width = "75px"
+	android:layout_height = "wrap_content"
+	android:button = "@drawable/new_item_folder_style"
+	android:layout_below = "@+id/selectPhoto"
+	android:layout_toRightOf = "@+id/fragile"
+	android:layout_marginLeft = "20px"
+	android:layout_alignTop = "@+id/hot"
+/>	
+<EditText
+	android:id = "@+id/descriptor"
+	android:layout_width = "430px"
+	android:layout_height = "150px"
+	android:background = "@null"
+	android:layout_below = "@+id/hot"
+	android:layout_marginLeft = "30px"
+	android:textColor = "@color/WHITE"
+	android:layout_marginTop = "25px"
+	/>
+<Button
+	android:id = "@+id/finish"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:layout_below = "@+id/descriptor"
+	android:layout_alignRight = "@+id/descriptor"
+	android:background = "@drawable/new_item_finish_button"
+	android:layout_marginTop = "60px"
+	/>	
+
+</RelativeLayout>
